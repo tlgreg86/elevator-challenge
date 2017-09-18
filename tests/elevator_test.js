@@ -50,7 +50,7 @@ describe('Elevator', function() {
 
     elevator.newRequest(mockUser);
 
-    assert.deepEqual(elevator.requests, [3])
+    assert.deepEqual(elevator.requests, [8, 3])
     assert.deepEqual(elevator.currentRiders, [{ name: "John", currentFloor: 8, dropOffFloor: 3 }])
   })
 
